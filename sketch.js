@@ -67,7 +67,7 @@ function setup() {
   trex.scale = 1
 
   trex.setCollider("rectangle",0, 0, 70, 70);
-  trex.debug=true;
+  trex.debug=false;
   
   gameOver = createSprite(camera.position.x+100,200);
   gameOver.addImage(gameOverImg);
@@ -226,7 +226,7 @@ function spawnObstacles() {
 
 //set collider
     obstacle.setCollider("rectangle",0, 0, 80, 90);
-    obstacle.debug=true;
+    obstacle.debug=false;
    
     //add each obstacle to the group
     obstaclesGroup.add(obstacle);
